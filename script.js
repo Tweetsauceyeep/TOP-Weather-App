@@ -49,6 +49,7 @@ function handleSearchInput() {
   let query = searchForm.elements[0].value;
   if (content.innerHTML === '') {
     apiCall(query);
+    query.value= ""
   } else {
     removeWeatherDiv(content);
     apiCall(query);
